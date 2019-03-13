@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id = "txt1">
+<input type="button" value="Meter to foot " onclick="doi()">
+<input type="text" disabled id = "txt2"><br><br>
+<input type="text" id = "txt3">
+<input type="button" value="Foot to meter" onclick="chuyen()">
+<input type="txt1"  disabled id = "txt4">
+
+<script>
+    function doi() {
+        let number = parseInt(document.getElementById('txt1').value);
+        document.getElementById('txt2').value = (0.305*number)
+    }
+    function chuyen() {
+        let num = document.getElementById('txt3').value;
+        document.getElementById('txt4').value = (3.279*num);
+
+    }
+</script>
+</body>
+</html>
